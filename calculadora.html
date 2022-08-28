@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Grafica | AnthnnyL</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">INICIO</a>
+        <nav>
+            <section class="title-header">
+                <h1>ANTHONY LOPEZ</h1>
+                <h2>Desarrollador en progreso Web / Python</h2>
+            </section>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg>
+            </div>
+    </header>
+    <section class="calculadora">
+        <form id="calcu">
+            <label>NUMERO 1: </label>
+            <input type="number" class="deco" id="n1" autofocus placeholder="Escribe un numero">
+            <button class="deco" onclick="limpiar();">Limpiar</button>
+            <br>
+            <br>
+            <label>NUMERO 2: </label>
+            <input type="number" class="deco" id="n2" autofocus placeholder="Escribe un numero">
+            <button class="deco" onclick="limpiar();">Limpiar</button>
+            <br>
+            <br>
+            <p>El resultado es: <span class="deco" id="res"></span></p>
+            <br>
+            <button class="deco" type="button" onclick="sumar();">Sumar</button>
+            <button class="deco" type="button" onclick="restar();">Restar</button>
+            <button class="deco" type="button" onclick="multiplicar();">Multiplicar</button>
+            <button class="deco" type="button" onclick="dividir();">Dividir</button>
+        </form>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -398,7 +398,7 @@ header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .container-form h2{
@@ -421,10 +421,14 @@ header{
     margin-right: 10px;
 }
 
+.container-form form .campo{
+    width: 100%;
+}
+
 .container-form form .campo, textarea{
     width: 100%;
     padding: 15px 10px;
-    font-size: 13px;
+    font-size: 14px;
     border: 1px solid #dbdbdb;
     margin-bottom: 20px;
     border-radius: 3px;

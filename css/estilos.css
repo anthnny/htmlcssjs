@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'pt serif', 'Open Sans';
 }
 
 body{
@@ -149,7 +150,7 @@ header{
     height: 100%;
     top: 0;
     transform: scale(0);
-    background: hsla(273, 91%, 27%, 0.7);
+    background: hsla(273, 52%, 68%, 0.7);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -230,50 +231,149 @@ header{
 
 /* FOOTER */
 
-footer{
-    background: #414141;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
+.footer-distributed{
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
 }
 
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
 }
 
-.content-foot{
-    text-align: center;
+.footer-distributed .footer-left{
+    width: 30%;
 }
 
-.content-foot h4{
+.footer-distributed h3{
     color: #fff;
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    font: normal 36px 'cookie';
+    margin: 0;
 }
 
-.content-foot p{
-    color: #ccc;
+.footer-distributed h3 span{
+    color: #00ffff;
 }
 
-.title-final{
+.footer-distributed .footer-links{
+    color: #fff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-copy{
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color: #33383b;
+    color: #fff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
     text-align: center;
-    font-size: 24px;
-    margin: 20px 0 0;
-    color: #9e9797;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
 }
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a{
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-right{
+    width: 30%;
+}
+
+.footer-distributed .footer-ca{
+    line-height: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-ca span{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover{
+    background-color: #00ffff;
+}
+
+.footer-links a:hover{
+    color: #00ffff;
+}
+
 
 /* CALCULADORA */
 
 .calculadora{
     text-align: center;
     font-size: 18px;
-    height: 460px;
+    height: 452px;
     width: 100%;
     background: -webkit-linear-gradient(to right, #373b44, #4286f4); 
     background: linear-gradient(to right, #373b44, #4286f4);
